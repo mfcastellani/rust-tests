@@ -1,4 +1,4 @@
-pub fn string_demo() {
+pub(crate) fn string_demo() {
     // a slice that always points to a valid UTF-8 sequence
     // a view into a String
     let s: &'static str = "hi there!"; // &'static str -->
