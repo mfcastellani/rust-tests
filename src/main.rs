@@ -25,6 +25,7 @@ mod closures;
 mod higher_order_functions;
 mod traits;
 mod into_drop;
+mod lifetime;
 
 use crate::array_slice_tuples::{array_demo, slice_demo, tuples_demo};
 use crate::closures::closure_demo;
@@ -40,6 +41,7 @@ use crate::union::union_demo;
 use crate::generics::generics_demo;
 use crate::into_drop::into_drop_demo;
 use crate::iterators::iter_demo;
+use crate::lifetime::lifetime_demo;
 use crate::string::string_demo;
 use crate::traits::trait_demo;
 
@@ -126,5 +128,7 @@ fn main() {
     trait_demo();
     println!("\n => Into and Debug");
     into_drop_demo();
+    println!("\n => Lifetime");
+    lifetime_demo();
 }
 
